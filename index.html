@@ -387,6 +387,11 @@
           <td><code>n</code></td>
           <td>Quite all</td>
         </tr>
+        <tr>
+          <td><code>Space + sj</code></td>
+          <td>n</td>
+          <td>Jump list</td>
+        </tr>
       </table>
     </section>
 
@@ -399,19 +404,14 @@
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Ctrl + h,l,k,j</code></td>
-          <td><code>n,x</code></td>
-          <td>Go to (left,right,up,down) window</td>
-        </tr>
-        <tr>
-          <td><code>Ctrl + up,down,left,right</code></td>
-          <td><code>n,x</code></td>
-          <td>Adjust window size</td>
-        </tr>
-        <tr>
           <td><code>Shift + h,l</code></td>
           <td><code>n</code></td>
           <td>Move to prev,next buffer</td>
+        </tr>
+        <tr>
+          <td><code>[B, ]B</code></td>
+          <td><code>n</code></td>
+          <td>Move buffer prev/next</td>
         </tr>
         <tr>
           <td><code>Space + bb</code></td>
@@ -432,6 +432,36 @@
           <td><code>Space + bD</code></td>
           <td><code>n</code></td>
           <td>Delete buffer and window</td>
+        </tr>
+        <tr>
+          <td><code>Space + bl</code></td>
+          <td><code>n</code></td>
+          <td>Delete buffers to left</td>
+        </tr>
+        <tr>
+          <td><code>Space + br</code></td>
+          <td><code>n</code></td>
+          <td>Delete buffers to right</td>
+        </tr>
+        <tr>
+          <td><code>Space + bp</code></td>
+          <td><code>n</code></td>
+          <td>Pin/unpin buffer</td>
+        </tr>
+        <tr>
+          <td><code>Space + bP</code></td>
+          <td><code>n</code></td>
+          <td>Delete unpin buffers</td>
+        </tr>
+        <tr>
+          <td><code>Ctrl + h,l,k,j</code></td>
+          <td><code>n,x</code></td>
+          <td>Go to (left,right,up,down) window</td>
+        </tr>
+        <tr>
+          <td><code>Ctrl + up,down,left,right</code></td>
+          <td><code>n,x</code></td>
+          <td>Adjust window size</td>
         </tr>
         <tr>
           <td><code>Space + - </code></td>
@@ -475,6 +505,11 @@
           <td><code>n,x,o</code></td>
           <td>Next/Prev search result</td>
         </tr>
+        <tr>
+          <td><code>Space + sr</code></td>
+          <td><code>n,x</code></td>
+          <td>Search and replace</td>
+        </tr>
       </table>
     </section>
 
@@ -483,12 +518,52 @@
       <table class="compact">
         <tr>
           <th>Hotkey</th>
+          <th>Mode</th>
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Super + ,</code></td>
-          <td>Dismiss latest notification</td>
+          <td><code>Space + db</code></td>
+          <td>n</td>
+          <td>Toggle breakpoint</td>
         </tr>
+        <tr>
+          <td><code>Space + dB</code></td>
+          <td>n</td>
+          <td>Conditional breakpoint</td>
+        </tr>
+        <tr>
+          <td><code>Space + dc</code></td>
+          <td>n</td>
+          <td>Run debugging</td>
+        </tr>
+        <tr>
+          <td><code>Space + dC</code></td>
+          <td>n</td>
+          <td>Run to the cursor</td>
+        </tr>
+        <tr>
+          <td><code>Space + da</code></td>
+          <td>n</td>
+          <td>Run debugging with args</td>
+        </tr>
+        <tr>
+          <td><code>Space + dl</code></td>
+          <td>n</td>
+          <td>Run last</td>
+        </tr>
+        <tr>
+          <td><code>Space + dt</code></td>
+          <td>n</td>
+          <td>Terminate debugging</td>
+        </tr>
+        <tr>
+          <td><code>Space + di</code></td>
+          <td>n</td>
+          <td>Step Into</td>
+        </tr>
+        <tr>
+          <td><code>Space + dj</code></td>
+          <td>n</td>
       </table>
     </section>
 
@@ -497,11 +572,45 @@
       <table class="compact">
         <tr>
           <th>Hotkey</th>
+          <th>Mode</th>
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Ctrl+Shift+Super+Space</code></td>
-          <td>Pick a new theme</td>
+          <td><code>Ctrl + .</code></td>
+          <td><code>n</code></td>
+          <td>Sidekick Toggle</td>
+        </tr>
+        <tr>
+          <td><code>Space + ad</code></td>
+          <td><code>n</code></td>
+          <td>Detach CLI session</td>
+        </tr>
+        <tr>
+          <td><code>Space + af</code></td>
+          <td><code>n</code></td>
+          <td>Send file</td>
+        </tr>
+        <tr>
+          <td><code>Space + at</code></td>
+          <td><code>n</code></td>
+          <td>Send selection (as ref)</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td><code>Space + av</code></td>
+          <td><code>n</code></td>
+          <td>Send selection (as code)</td>
+        </tr>
+        <tr>
+          <td><code>Space + as</code></td>
+          <td><code>n</code></td>
+          <td>Select CLI</td>
+        </tr>
+        <tr>
+          <td><code>Space + aa</code></td>
+          <td><code>n</code></td>
+          <td>Toogle CLI</td>
         </tr>
       </table>
     </section>
@@ -524,10 +633,25 @@
           <td>n</td>
           <td>Add comment above</td>
         </tr>
-        <tr>
+        <tr> 
           <td><code>Space + cf</code></td>
           <td>n,x</td>
           <td>Format code</td>
+        </tr>
+        <tr>
+        <tr>
+          <td><code>za</code></td>
+          <td>n</td>
+          <td>Toggle folding</td>
+        </tr>
+          <td><code>zA</code></td>
+          <td>n</td>
+          <td>Toggle folding recursive</td>
+        </tr>
+        </tr>
+          <td><code>Space + cs</code></td>
+          <td>n</td>
+          <td>Toggle outline</td>
         </tr>
         <tr>
           <td><code>Space + uf</code></td>
@@ -558,6 +682,92 @@
           <td><code>Space + uz</code></td>
           <td>n</td>
           <td>Toggle zen mode</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>LSP</h2>
+      <table class="compact">
+        <tr>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><code>Space + cl</code></td>
+          <td>n</td>
+          <td>LSP Info</td>
+        </tr>
+        <tr>
+          <td><code>gd</code></td>
+          <td>n</td>
+          <td>Go to definition</td>
+        </tr>
+        <tr>
+          <td><code>gr</code></td>
+          <td>n</td>
+          <td>References</td>
+        </tr>
+        <tr>
+          <td><code>gI</code></td>
+          <td>n</td>
+          <td>Go to Implementation</td>
+        </tr>
+        <tr>
+          <td><code>gy</code></td>
+          <td>n</td>
+          <td>Goto Type Definition</td>
+        </tr>
+        <tr>
+          <td><code>K</code></td>
+          <td>n</td>
+          <td>Hover</td>
+        </tr>
+        <tr>
+          <td><code>gK</code></td>
+          <td>n</td>
+          <td>Signature Help</td>
+        </tr>
+        <tr>
+          <td><code>Ctrl + k</code></td>
+          <td>i</td>
+          <td>Signature Help</td>
+        </tr>
+        <tr>
+          <td><code>Space + ca</code></td>
+          <td>n</td>
+          <td>Code Action</td>
+        </tr>
+        <tr>
+          <td><code>Space + cA</code></td>
+          <td>n</td>
+          <td>Source Action</td>
+        </tr>
+        <tr>
+          <td><code>Space + cc</code></td>
+          <td>n</td>
+          <td>Run Codelense</td>
+        </tr>
+        <tr>
+          <td><code>Space + cr</code></td>
+          <td>n</td>
+          <td>Rename</td>
+        </tr>
+        <tr>
+          <td><code>Space + cR</code></td>
+          <td>n</td>
+          <td>Rename File</td>
+        </tr>
+        <tr>
+          <td><code>]]</code></td>
+          <td>n</td>
+          <td>Next Reference</td>
+        </tr>
+        <tr>
+          <td><code>[[</code></td>
+          <td>n</td>
+          <td>Prev Reference</td>
         </tr>
       </table>
     </section>
@@ -606,6 +816,72 @@
           <td>n</td>
           <td>Lazy</td>
         </tr>
+        <tr>
+          <td><code>Space + cm</code></td>
+          <td>n</td>
+          <td>Mason</td>
+        </tr>
+        <tr>
+          <td><code>Space + n</code></td>
+          <td>n</td>
+          <td>Notification History</td>
+        </tr>
+        <tr>
+          <td><code>Space + cs</code></td>
+          <td>n</td>
+          <td>Markdown preview</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Snacks & Harpoon</h2>
+      <table class="compact">
+        <tr>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><code>Space + Space</code></td>
+          <td>n</td>
+          <td>Find files</td>
+        </tr>
+        <tr>
+          <td><code>Space + ,</code></td>
+          <td>n</td>
+          <td>Buffers</td>
+        </tr>
+        <tr>
+          <td><code>Space + /</code></td>
+          <td>n</td>
+          <td>Grep (root dir)</td>
+        </tr>
+        <tr>
+          <td><code>Space + :</code></td>
+          <td>n</td>
+          <td>Command history</td>
+        </tr>
+        <tr>
+          <td><code>Space + sR</code></td>
+          <td>n</td>
+          <td>Resume snacks</td>
+        </tr>
+        <tr>
+          <td><code>Space + H</code></td>
+          <td>n</td>
+          <td>Add file to Harpoon</td>
+        </tr>
+        <tr>
+          <td><code>Space + h</code></td>
+          <td>n</td>
+          <td>Harpoon menu</td>
+        </tr>
+        <tr>
+          <td><code>Space + 1-9</code></td>
+          <td>n</td>
+          <td>Go to Harpoon file 1-9</td>
+        </tr>
       </table>
     </section>
 
@@ -622,6 +898,26 @@
           <td>n</td>
           <td>New file</td>
         </tr>
+        <tr>
+          <td><code>Space + e</code></td>
+          <td>n</td>
+          <td>Toogle Explorer</td>
+        </tr>
+        <tr>
+          <td><code>Space + fR</code></td>
+          <td>n</td>
+          <td>Recently files</td>
+        </tr>
+        <tr>
+          <td><code>Space + fm</code></td>
+          <td>n</td>
+          <td>Mini file picker (cur file dir)</td>
+        </tr>
+        <tr>
+          <td><code>Space + fM</code></td>
+          <td>n</td>
+          <td>Mini file picker (root dir)</td>
+        </tr>
       </table>
     </section>
 
@@ -634,15 +930,26 @@
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Space + xl</code></td>
+          <td><code>Space + sd</code></td>
           <td>n</td>
-          <td>Location list</td>
+          <td>Project Diagnostics</td>
         </tr>
         <tr>
-          <td><code>Space + xq</code></td>
+          <td><code>Space + sD</code></td>
+          <td>n</td>
+          <td>Buffer Diagnostics</td>
+        </tr>
+        <tr>
+          <td><code>Space + sq</code></td>
           <td>n</td>
           <td>Quickfix list</td>
         </tr>
+        <tr>
+          <td><code>Space + st</code></td>
+          <td>n</td>
+          <td>Todo/Fix/Fixme/Note</td>
+        </tr>
+
         <tr>
           <td><code>[q , ]q</code></td>
           <td>n</td>
