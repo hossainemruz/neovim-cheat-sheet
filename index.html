@@ -37,7 +37,7 @@
         Arial, sans-serif;
       line-height: 1.35;
       color: #222;
-      max-width: 1400px;
+      max-width: 1850px;
       margin: 12px auto 32px;
       padding: 0 16px 40px;
     }
@@ -84,7 +84,7 @@
     }
 
     .container {
-      column-count: 2;
+      column-count: 4;
       column-gap: 28px;
     }
 
@@ -166,7 +166,8 @@
     }
 
     .print-button {
-      display: inline-block;
+      /* display: inline-block; */
+      display: none;
       margin: 8px auto 16px;
       padding: 8px 14px;
       background-color: #007bff;
@@ -488,7 +489,69 @@
     </section>
 
     <section>
-      <h2>Search & Replace</h2>
+      <h2>File Management</h2>
+      <table class="compact">
+        <tr>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><code>Space + fn</code></td>
+          <td>n</td>
+          <td>New file</td>
+        </tr>
+        <tr>
+          <td><code>Space + e</code></td>
+          <td>n</td>
+          <td>Toogle Explorer</td>
+        </tr>
+        <tr>
+          <td><code>Space + fR</code></td>
+          <td>n</td>
+          <td>Recently files</td>
+        </tr>
+        <tr>
+          <td><code>Space + fm</code></td>
+          <td>n</td>
+          <td>Mini file picker (cur file dir)</td>
+        </tr>
+        <tr>
+          <td><code>Space + fM</code></td>
+          <td>n</td>
+          <td>Mini file picker (root dir)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Git</h2>
+      <table class="compact">
+        <tr>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><code>Space + gL</code></td>
+          <td>n</td>
+          <td>Git log (cwd)</td>
+        </tr>
+        <tr>
+          <td><code>Space + gb</code></td>
+          <td>n</td>
+          <td>Git blame (line)</td>
+        </tr>
+        <tr>
+          <td><code>Space + gf</code></td>
+          <td>n</td>
+          <td>Git current file history</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Search & Replace & Selection</h2>
       <table class="compact">
         <tr>
           <th>Hotkey</th>
@@ -510,107 +573,20 @@
           <td><code>n,x</code></td>
           <td>Search and replace</td>
         </tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>Testing & Debugging</h2>
-      <table class="compact">
         <tr>
-          <th>Hotkey</th>
-          <th>Mode</th>
-          <th>Function</th>
+          <td><code>s</code></td>
+          <td><code>n,o,x</code></td>
+          <td>Flash</td>
         </tr>
         <tr>
-          <td><code>Space + db</code></td>
-          <td>n</td>
-          <td>Toggle breakpoint</td>
+          <td><code>S</code></td>
+          <td><code>n,o,x</code></td>
+          <td>Flash Treesitter</td>
         </tr>
         <tr>
-          <td><code>Space + dB</code></td>
-          <td>n</td>
-          <td>Conditional breakpoint</td>
-        </tr>
-        <tr>
-          <td><code>Space + dc</code></td>
-          <td>n</td>
-          <td>Run debugging</td>
-        </tr>
-        <tr>
-          <td><code>Space + dC</code></td>
-          <td>n</td>
-          <td>Run to the cursor</td>
-        </tr>
-        <tr>
-          <td><code>Space + da</code></td>
-          <td>n</td>
-          <td>Run debugging with args</td>
-        </tr>
-        <tr>
-          <td><code>Space + dl</code></td>
-          <td>n</td>
-          <td>Run last</td>
-        </tr>
-        <tr>
-          <td><code>Space + dt</code></td>
-          <td>n</td>
-          <td>Terminate debugging</td>
-        </tr>
-        <tr>
-          <td><code>Space + di</code></td>
-          <td>n</td>
-          <td>Step Into</td>
-        </tr>
-        <tr>
-          <td><code>Space + dj</code></td>
-          <td>n</td>
-      </table>
-    </section>
-
-    <section>
-      <h2>AI</h2>
-      <table class="compact">
-        <tr>
-          <th>Hotkey</th>
-          <th>Mode</th>
-          <th>Function</th>
-        </tr>
-        <tr>
-          <td><code>Ctrl + .</code></td>
-          <td><code>n</code></td>
-          <td>Sidekick Toggle</td>
-        </tr>
-        <tr>
-          <td><code>Space + ad</code></td>
-          <td><code>n</code></td>
-          <td>Detach CLI session</td>
-        </tr>
-        <tr>
-          <td><code>Space + af</code></td>
-          <td><code>n</code></td>
-          <td>Send file</td>
-        </tr>
-        <tr>
-          <td><code>Space + at</code></td>
-          <td><code>n</code></td>
-          <td>Send selection (as ref)</td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-          <td><code>Space + av</code></td>
-          <td><code>n</code></td>
-          <td>Send selection (as code)</td>
-        </tr>
-        <tr>
-          <td><code>Space + as</code></td>
-          <td><code>n</code></td>
-          <td>Select CLI</td>
-        </tr>
-        <tr>
-          <td><code>Space + aa</code></td>
-          <td><code>n</code></td>
-          <td>Toogle CLI</td>
+          <td><code>Ctrl + Space</code></td>
+          <td><code>n,o,x</code></td>
+          <td>Treesitter incremental selection</td>
         </tr>
       </table>
     </section>
@@ -633,7 +609,7 @@
           <td>n</td>
           <td>Add comment above</td>
         </tr>
-        <tr> 
+        <tr>
           <td><code>Space + cf</code></td>
           <td>n,x</td>
           <td>Format code</td>
@@ -644,14 +620,14 @@
           <td>n</td>
           <td>Toggle folding</td>
         </tr>
-          <td><code>zA</code></td>
-          <td>n</td>
-          <td>Toggle folding recursive</td>
+        <td><code>zA</code></td>
+        <td>n</td>
+        <td>Toggle folding recursive</td>
         </tr>
         </tr>
-          <td><code>Space + cs</code></td>
-          <td>n</td>
-          <td>Toggle outline</td>
+        <td><code>Space + cs</code></td>
+        <td>n</td>
+        <td>Toggle outline</td>
         </tr>
         <tr>
           <td><code>Space + uf</code></td>
@@ -772,8 +748,9 @@
       </table>
     </section>
 
+
     <section>
-      <h2>Git</h2>
+      <h2>AI</h2>
       <table class="compact">
         <tr>
           <th>Hotkey</th>
@@ -781,19 +758,88 @@
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Space + gL</code></td>
-          <td>n</td>
-          <td>Git log (cwd)</td>
+          <td><code>Ctrl + .</code></td>
+          <td><code>n</code></td>
+          <td>Sidekick Toggle</td>
         </tr>
         <tr>
-          <td><code>Space + gb</code></td>
-          <td>n</td>
-          <td>Git blame (line)</td>
+          <td><code>Space + ad</code></td>
+          <td><code>n</code></td>
+          <td>Detach CLI session</td>
         </tr>
         <tr>
-          <td><code>Space + gf</code></td>
+          <td><code>Space + af</code></td>
+          <td><code>n</code></td>
+          <td>Send file</td>
+        </tr>
+        <tr>
+          <td><code>Space + at</code></td>
+          <td><code>n</code></td>
+          <td>Send selection (as ref)</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td><code>Space + av</code></td>
+          <td><code>n</code></td>
+          <td>Send selection (as code)</td>
+        </tr>
+        <tr>
+          <td><code>Space + as</code></td>
+          <td><code>n</code></td>
+          <td>Select CLI</td>
+        </tr>
+        <tr>
+          <td><code>Space + aa</code></td>
+          <td><code>n</code></td>
+          <td>Toogle CLI</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Diagnostics</h2>
+      <table class="compact">
+        <tr>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><code>Space + sd</code></td>
           <td>n</td>
-          <td>Git current file history</td>
+          <td>Project Diagnostics</td>
+        </tr>
+        <tr>
+          <td><code>Space + sD</code></td>
+          <td>n</td>
+          <td>Buffer Diagnostics</td>
+        </tr>
+        <tr>
+          <td><code>Space + sq</code></td>
+          <td>n</td>
+          <td>Quickfix list</td>
+        </tr>
+        <tr>
+          <td><code>Space + st</code></td>
+          <td>n</td>
+          <td>Todo/Fix/Fixme/Note</td>
+        </tr>
+
+        <tr>
+          <td><code>[q , ]q</code></td>
+          <td>n</td>
+          <td>Prev/next quickfix</td>
+        </tr>
+        <tr>
+          <td><code>[e , ]e</code></td>
+          <td>n</td>
+          <td>Prev/next error</td>
+        </tr>
+        <tr>
+          <td><code>[w , ]w</code></td>
+          <td>n</td>
+          <td>Prev/next warning</td>
         </tr>
       </table>
     </section>
@@ -830,6 +876,11 @@
           <td><code>Space + cs</code></td>
           <td>n</td>
           <td>Markdown preview</td>
+        </tr>
+        <tr>
+          <td><code>Space + cv</code></td>
+          <td>n</td>
+          <td>Select python venv</td>
         </tr>
       </table>
     </section>
@@ -886,7 +937,7 @@
     </section>
 
     <section>
-      <h2>File Management</h2>
+      <h2>Testing</h2>
       <table class="compact">
         <tr>
           <th>Hotkey</th>
@@ -894,35 +945,54 @@
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Space + fn</code></td>
+          <td><code>Space + tr</code></td>
           <td>n</td>
-          <td>New file</td>
+          <td>Run nearest test</td>
         </tr>
         <tr>
-          <td><code>Space + e</code></td>
+          <td><code>Space + tl</code></td>
           <td>n</td>
-          <td>Toogle Explorer</td>
+          <td>Run last test</td>
         </tr>
         <tr>
-          <td><code>Space + fR</code></td>
+          <td><code>Space + tt</code></td>
           <td>n</td>
-          <td>Recently files</td>
+          <td>Run cur test file</td>
         </tr>
         <tr>
-          <td><code>Space + fm</code></td>
+          <td><code>Space + tT</code></td>
           <td>n</td>
-          <td>Mini file picker (cur file dir)</td>
+          <td>Run all test files</td>
         </tr>
         <tr>
-          <td><code>Space + fM</code></td>
+          <td><code>Space + tS</code></td>
           <td>n</td>
-          <td>Mini file picker (root dir)</td>
+          <td>Stop test</td>
         </tr>
+        <tr>
+          <td><code>Space + ts</code></td>
+          <td>n</td>
+          <td>Toggle summary panel</td>
+        </tr>
+        <tr>
+          <td><code>Space + to</code></td>
+          <td>n</td>
+          <td>Show output</td>
+        </tr>
+        <tr>
+          <td><code>Space + tO</code></td>
+          <td>n</td>
+          <td>Toggle output panel</td>
+        </tr>
+        <tr>
+          <td><code>Space + tw</code></td>
+          <td>n</td>
+          <td>Toggle watch</td>
       </table>
     </section>
 
     <section>
-      <h2>Diagnostics</h2>
+      <h2>Debugging</h2>
       <table class="compact">
         <tr>
           <th>Hotkey</th>
@@ -930,40 +1000,103 @@
           <th>Function</th>
         </tr>
         <tr>
-          <td><code>Space + sd</code></td>
+          <td><code>Space + db</code></td>
           <td>n</td>
-          <td>Project Diagnostics</td>
+          <td>Toggle breakpoint</td>
         </tr>
         <tr>
-          <td><code>Space + sD</code></td>
+          <td><code>Space + dB</code></td>
           <td>n</td>
-          <td>Buffer Diagnostics</td>
+          <td>Conditional breakpoint</td>
         </tr>
         <tr>
-          <td><code>Space + sq</code></td>
+          <td><code>Space + dc</code></td>
           <td>n</td>
-          <td>Quickfix list</td>
+          <td>Run debugging</td>
         </tr>
         <tr>
-          <td><code>Space + st</code></td>
+          <td><code>Space + dC</code></td>
           <td>n</td>
-          <td>Todo/Fix/Fixme/Note</td>
+          <td>Run to the cursor</td>
         </tr>
+        <tr>
+          <td><code>Space + da</code></td>
+          <td>n</td>
+          <td>Run debugging with args</td>
+        </tr>
+        <tr>
+          <td><code>Space + dl</code></td>
+          <td>n</td>
+          <td>Run last</td>
+        </tr>
+        <tr>
+          <td><code>Space + dt</code></td>
+          <td>n</td>
+          <td>Terminate debugging</td>
+        </tr>
+        <tr>
+          <td><code>Space + di</code></td>
+          <td>n</td>
+          <td>Step Into</td>
+        </tr>
+        <tr>
+          <td><code>Space + dj</code></td>
+          <td>n</td>
+      </table>
+    </section>
 
+    <section>
+      <h2>REST API</h2>
+      <table class="compact">
         <tr>
-          <td><code>[q , ]q</code></td>
-          <td>n</td>
-          <td>Prev/next quickfix</td>
+          <th>Hotkey</th>
+          <th>Mode</th>
+          <th>Function</th>
         </tr>
         <tr>
-          <td><code>[e , ]e</code></td>
+          <td><code>Space + Rb</code></td>
           <td>n</td>
-          <td>Prev/next error</td>
+          <td>Open scratchpad</td>
         </tr>
         <tr>
-          <td><code>[w , ]w</code></td>
+          <td><code>Space + Rc</code></td>
           <td>n</td>
-          <td>Prev/next warning</td>
+          <td>Copy as cURL</td>
+        </tr>
+        <tr>
+          <td><code>Space + RC</code></td>
+          <td>n</td>
+          <td>Paste from curl</td>
+        </tr>
+        <tr>
+          <td><code>Space + Re</code></td>
+          <td>n</td>
+          <td>Set environment</td>
+        </tr>
+        <tr>
+          <td><code>Space + Rs</code></td>
+          <td>n</td>
+          <td>Send request</td>
+        </tr>
+        <tr>
+          <td><code>Space + Rr</code></td>
+          <td>n</td>
+          <td>Replay last request</td>
+        </tr>
+        <tr>
+          <td><code>Space + Rn , Rp</code></td>
+          <td>n</td>
+          <td>Jump to next/prev request</td>
+        </tr>
+        <tr>
+          <td><code>Space + Ri</code></td>
+          <td>n</td>
+          <td>Inspect current request</td>
+        </tr>
+        <tr>
+          <td><code>Space + RS</code></td>
+          <td>n</td>
+          <td>Show stats</td>
         </tr>
       </table>
     </section>
